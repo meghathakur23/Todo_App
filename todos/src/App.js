@@ -3,26 +3,13 @@ import './App.css';
 import Todos from './components/Todo';
 import Header from './components/layout/header';
 import AddTodo from './components/AddTodo';
+import uuid from 'uuid';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
   state = { 
-    todos :[{
-      id: 1,
-      title: 'take out the trash',
-      completed: false
-    },
-    {
-      id: 2,
-      title: 'Help out ',
-      completed: true
-    },
-    {
-      id: 3,
-      title: 'learn react',
-      completed: false
-    }]
+    todos :[]
    }
 
   //Toggle complete
@@ -45,8 +32,8 @@ class App extends Component {
   // Add Todo
   addTodo = (title) => {
     const newTodo = {
-      id: 4,
-      title: title, 
+      id: uuid.v4(),
+      title, 
       completed: false
     }
    this.setState({ todos: [...this.state.todos, newTodo]})
