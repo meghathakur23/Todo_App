@@ -21,13 +21,13 @@ onSubmit = (e) => {
                     <input 
                     type="text"
                     name="title"
-                    style={{flex: '15', padding:'15px'}}
+                    style={{flex: '40', padding:'15px'}}
                     placeholder="Add Todo ...."
                     value={this.state.title}
                     onChange={this.onChange}/>
                     <input 
                     type="submit"
-                    value="submit"
+                    value="+"
                     className="btn"
                     style={{flex: '1'}}
                     />

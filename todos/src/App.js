@@ -3,9 +3,7 @@ import './App.css';
 import Todos from './components/Todo';
 import Header from './components/layout/header';
 import AddTodo from './components/AddTodo';
-//import uuid from 'uuid';
 import axios from 'axios';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   state = { 
